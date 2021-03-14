@@ -15,7 +15,6 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.87);
-  /* text-decoration-color: rgba(0, 0, 0, 0.87); */
   text-decoration-line: none;
   cursor: pointer;
   opacity: 0.85;
@@ -51,6 +50,7 @@ li {
   width: 30px;
   height: 30px;
   background-image: url("//web.archive.org/web/20191130234759im_/https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+  opacity: 0.8;
   background-position-x: -132px;
   background-position-y: -44px;
   margin-left: 1rem;
@@ -64,14 +64,6 @@ li {
 }
 
 /* Main with form */
-/* #main-section {
-  position: absolute;
-  top: 20vh;
-  left: 0;
-  width: 100%;
-  text-align: center;
-} */
-
 #main-section {
   display: flex;
   flex-direction: column;
@@ -90,19 +82,38 @@ li {
 }
 
 #search-frame:hover {
-  box-shadow: 1px 1px 5px 1px #8888887a;
+  box-shadow: 1px 1px 5px 1px #8888883d;
 }
 
+#search-icon-left {
+  fill: rgba(34, 34, 34, 0.5);
+  position: relative;
+  width: 1.32rem;
+  top: 0.8rem;
+  left: -0.7rem;
+}
+
+#search-icon-right {
+    background: url('//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    position:relative;
+    top: -1.3rem;
+    left: 27.95rem;
+  }
+
+
 form input {
-  border: 1px solid red;
+  border: none;
   position: relative;
   top: 0.4rem;
+  left: -0.5rem;
   height: 2rem;
-  width: 24rem;
+  width: 25rem;
   font-size: 16px;
   outline: none;
 }
-
 
 button {
   font-size: 15px;
@@ -116,4 +127,46 @@ button {
 
 button:hover {
   border: 1px solid rgba(34, 34, 34, 0.2);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid rgba(128, 128, 128, 0.082);
+  background-color: #f3f3f3;
+  padding: 10px 10px;
+}
+
+footer div {
+  justify-content: space-between;
+}
+
+footer a {
+  font-size: 14px;
+  margin-right: 0.8rem;
+}
+
+#footer-left {
+  flex-wrap: wrap;
+}
+
+#footer-right {
+  margin-right: 0.8rem;
+}
+
+@media only screen and (max-width: 596px) {
+  #footer-left {
+    display: contents;
+  }
+  #footer-right {
+    display: contents;
+  }
+  #footer-list {
+    justify-content: space-evenly;
+  }
+  footer li {
+    margin: 0 0;
+  }
 }
