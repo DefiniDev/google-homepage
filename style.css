@@ -82,33 +82,35 @@ li {
 }
 
 #search-frame:hover {
-  box-shadow: 1px 1px 5px 1px #8888883d;
+  box-shadow: 1px 1px 5px 1px #8888886b;
+}
+
+#search-icons {
+  position: absolute;
+  top: 20.5rem;
 }
 
 #search-icon-left {
   fill: rgba(34, 34, 34, 0.5);
-  position: relative;
   width: 1.32rem;
-  top: 0.8rem;
-  left: -0.7rem;
+  position: relative;
+  left: 0.7em;
 }
 
 #search-icon-right {
-    background: url('//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
-    height: 24px;
-    width: 24px;
-    background-size: 24px;
-    position:relative;
-    top: -1.3rem;
-    left: 27.95rem;
-  }
-
+  background: url("//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png")
+    0 0 no-repeat;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  background-size: 24px;
+  left: 26.6rem;
+}
 
 form input {
   border: none;
   position: relative;
   top: 0.4rem;
-  left: -0.5rem;
   height: 2rem;
   width: 25rem;
   font-size: 16px;
@@ -127,6 +129,10 @@ button {
 
 button:hover {
   border: 1px solid rgba(34, 34, 34, 0.2);
+}
+
+label {
+  display: none;
 }
 
 /* Footer */
